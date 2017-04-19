@@ -1,9 +1,4 @@
 
-<p align="center">
-<img style="center" src="https://d3ansictanv2wj.cloudfront.net/PP-Figure.002-a4b8991929205945dbc850ce4dafc845.png" width="500">
-</p>
-
-
 # Project Scope
 
 In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Scala API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
