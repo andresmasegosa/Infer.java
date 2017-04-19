@@ -9,15 +9,21 @@
 In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Java API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
 
 
+<p align="center">
+<img style="center" src="https://github.com/amidst/Infer.scala/blob/master/docs/figs/ML.jpg" width="500">
+</p>
+
 ML is a field of research that is widely established providing many solutions to major problems of society such as web search engines, genetic data analysis, self-driven cars, etc. The current availability by governments, institutions and corporations of large volumes of data is accelerating the development of such applications. However, developing a ML algorithm that fits a specific problem requires of programmers with expertise in various fields such as statistics, probabilistic modeling, optimization algorithms, etc. This translates, in most of the cases, to the need of highly qualified people who either are not available in the labor market or represent a high cost for the project. In the case of dealing with large volumes of data, these problems are exacerbated since it also requires that the designed ML algorithm to be parallelizable and scalable. All these factors are weighing on the process of ML applications development. So, usually, only large corporations have the technical and financial capacity to carry them out.
+
+
+
+
+For these reasons, the prestigious US Defense Advanced Research Projects Agency (DARPA) is currently funding a major programme in the area of probabilistic programming languages (PPLs). According to this agency, the PPLs could offer a solution to all these problems, since they allow to separate the model specification from the learning algorithm. For many experts, the PPLs could revolutionize the field of ML and scientific modeling in the same way that the appearance of the general-purpose programming languages revolutionized the field of software development fifty years ago, by freeing developers from the need to know the details of the hardware on which the program was running.
 
 
 <p align="center">
 <img style="center" src="http://www.visualisingdata.com/blog/wp-content/uploads/2010/03/DataDeluge.png" width="200">
 </p>
-
-
-For these reasons, the prestigious US Defense Advanced Research Projects Agency (DARPA) is currently funding a major programme in the area of probabilistic programming languages (PPLs). According to this agency, the PPLs could offer a solution to all these problems, since they allow to separate the model specification from the learning algorithm. For many experts, the PPLs could revolutionize the field of ML and scientific modeling in the same way that the appearance of the general-purpose programming languages revolutionized the field of software development fifty years ago, by freeing developers from the need to know the details of the hardware on which the program was running.
 
 One of the main problems still unresolved in this field is the definition of PPLs with an inference engine that is scalable and has the capacity to process large volumes of data. In this project we aim to extend and adapt the developments of the European research project AMIDST (FP7-ICT-619 209) to achieve this goal. The AMIDST project, where both the main researcher and the supervisor are involved, is based on the development of scalable inference and learning algorithms for probabilistic graphical models, in the context of massive data streams. The project INFER.java aims to define a PPL whose programs can be compiled to a probabilistic graphical model and to build a scalable inference engine for this PPL on top of the AMIDST's algorithms.
 
@@ -85,8 +91,19 @@ These four elements of expert knowledge could be modeled, respectively, by a pro
 
 A fictional example of how a PPL could encode this model in an integrated way with a MapReduce tool is given in Figure 1 (follows a Java 8-based syntax).
 
+![PPL Example](https://github.com/amidst/Infer.scala/blob/master/docs/figs/code_low.jpg)
+
+If, for example, the area to be monitored wasisoutside and the normal temperature depends on the season, it would be very easy for a programmer to update the previous code to consider this new situation.
+
+# Expected Impact of PPLs
+
+This approach offers the same advantages to the ML community that high-level programming languages offered to the software developer community fifty years ago [21]. Prior to the arrival of high-level languages, developers had to understand both the desired application and the low-level details of the hardware on which the application was running. But once these languages were developed, programming experts were able to focus on application development, while hardware experts focused on the development of compilers. This advance also had an associated cost in terms of execution times and memory consumption of the applications developed, but it entailed a huge increase in the productivity of the development of computer applications.
 
 <p align="center">
-<img style="center" src="https://image.slidesharecdn.com/probprogramming-151219161159/95/probabilistic-programming-in-python-5-638.jpg?cb=1450541578" width="200">
+<img style="center" src="https://i.stack.imgur.com/POnAZ.png" width="400">
 </p>
 
+
+Probabilistic programming languages could have a similar effect on the development of ML applications. Programmers could specialize in model development while ML experts could focus their efforts on developing reusable inference engines. ML applications developed in this way are likely to suffer some run-time penalties for tailor-made applications, but again this cost will be largely covered by the huge increase in productivity in the development of ML applications. In addition, the number of non-experts who can create applications using a PPL could be vastly greater than now. For these reasons, many experts believe that PPLs could revolutionize the ML field and scientific modeling in general [16,17].
+
+# State of the Art
