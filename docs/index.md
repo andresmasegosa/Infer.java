@@ -1,4 +1,4 @@
-# Prjoect Scope
+# Project Scope
 
 In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Java API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
 
@@ -9,7 +9,7 @@ For these reasons, the prestigious US Defense Advanced Research Projects Agency 
 One of the main problems still unresolved in this field is the definition of PPLs with an inference engine that is scalable and has the capacity to process large volumes of data. In this project we aim to extend and adapt the developments of the European research project AMIDST (FP7-ICT-619 209) to achieve this goal. The AMIDST project, where both the main researcher and the supervisor are involved, is based on the development of scalable inference and learning algorithms for probabilistic graphical models, in the context of massive data streams. The project INFER.java aims to define a PPL whose programs can be compiled to a probabilistic graphical model and to build a scalable inference engine for this PPL on top of the AMIDST's algorithms.
 
 
-#Motivation of PPLs
+# Motivation of PPLs
 
 Machine learning (ML) [1,2] is, at present, a fundamental part of many artificial intelligence techniques [3]. According to this field of research, it is much more effective to develop methods that allow machines to learn to perform tasks on their own, than to program them specifically for each one. This idea has been a real revolution in many other fields of research such as natural language processing [4], predictive analysis [2], cybersecurity [5], bioinformatics [6], and so on. In addition, it has allowed the development of highly innovative applications such as self-employed cars [7], image search [8], junk e-mail filters [9], recommendation systems [10], etc.
 
