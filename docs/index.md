@@ -6,7 +6,7 @@
 
 # Project Scope
 
-In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Java API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
+In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Scala API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
 
 
 <p align="center">
@@ -17,7 +17,6 @@ ML is a field of research that is widely established providing many solutions to
 
 
 
-
 For these reasons, the prestigious US Defense Advanced Research Projects Agency (DARPA) is currently funding a major programme in the area of probabilistic programming languages (PPLs). According to this agency, the PPLs could offer a solution to all these problems, since they allow to separate the model specification from the learning algorithm. For many experts, the PPLs could revolutionize the field of ML and scientific modeling in the same way that the appearance of the general-purpose programming languages revolutionized the field of software development fifty years ago, by freeing developers from the need to know the details of the hardware on which the program was running.
 
 
@@ -25,7 +24,7 @@ For these reasons, the prestigious US Defense Advanced Research Projects Agency 
 <img style="center" src="http://www.visualisingdata.com/blog/wp-content/uploads/2010/03/DataDeluge.png" width="200">
 </p>
 
-One of the main problems still unresolved in this field is the definition of PPLs with an inference engine that is scalable and has the capacity to process large volumes of data. In this project we aim to extend and adapt the developments of the European research project AMIDST (FP7-ICT-619 209) to achieve this goal. The AMIDST project, where both the main researcher and the supervisor are involved, is based on the development of scalable inference and learning algorithms for probabilistic graphical models, in the context of massive data streams. The project INFER.java aims to define a PPL whose programs can be compiled to a probabilistic graphical model and to build a scalable inference engine for this PPL on top of the AMIDST's algorithms.
+One of the main problems still unresolved in this field is the definition of PPLs with an inference engine that is scalable and has the capacity to process large volumes of data. In this project we aim to extend and adapt the developments of the European research project AMIDST (FP7-ICT-619 209) to achieve this goal. The AMIDST project, where both the main researcher and the supervisor are involved, is based on the development of scalable inference and learning algorithms for probabilistic graphical models, in the context of massive data streams. The project INFER.scala aims to define a PPL whose programs can be compiled to a probabilistic graphical model and to build a scalable inference engine for this PPL on top of the AMIDST's algorithms.
 
 
 # Why PPLs?
@@ -60,7 +59,7 @@ Broadly speaking, a PPL is like a standard programming language but has two adde
 
 
 <p align="center">
-<img style="center" src="https://image.slidesharecdn.com/probprogramming-151219161159/95/probabilistic-programming-in-python-5-638.jpg?cb=1450541578" width="200">
+<img style="center" src="https://image.slidesharecdn.com/probprogramming-151219161159/95/probabilistic-programming-in-python-5-638.jpg?cb=1450541578" width="400">
 </p>
 
 
@@ -68,7 +67,7 @@ The central element of a PPL is its inference engine [16], which allows to expli
 
 In this way, a programmer can directly construct a ML model of the phenomenon of interest using the appropriate PPL commands. When the model depends on an unknown quantity, developers introduce a random variable that can be associated with a wide range of probability distributions [2]. 
 
-## An Example
+# A PPL Example
 Consider the following example. A programmer has access to a flow of measurements of various temperature and smoke sensors in a given area and wants to develop a program that alerts the presence of a fire based on these measurements. The programmer has the following expert knowledge:
 
 * He knows that the presence of a fire is a rare and very unusual event.
@@ -105,5 +104,3 @@ This approach offers the same advantages to the ML community that high-level pro
 
 
 Probabilistic programming languages could have a similar effect on the development of ML applications. Programmers could specialize in model development while ML experts could focus their efforts on developing reusable inference engines. ML applications developed in this way are likely to suffer some run-time penalties for tailor-made applications, but again this cost will be largely covered by the huge increase in productivity in the development of ML applications. In addition, the number of non-experts who can create applications using a PPL could be vastly greater than now. For these reasons, many experts believe that PPLs could revolutionize the ML field and scientific modeling in general [16,17].
-
-# State of the Art
