@@ -1,6 +1,15 @@
+
+<p align="center">
+<img style="center" src="https://d3ansictanv2wj.cloudfront.net/PP-Figure.002-a4b8991929205945dbc850ce4dafc845.png" width="300">
+</p>
+
+
 # Project Scope
 
 In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Java API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
+
+
+
 
 ML is a field of research that is widely established providing many solutions to major problems of society such as web search engines, genetic data analysis, self-driven cars, etc. The current availability by governments, institutions and corporations of large volumes of data is accelerating the development of such applications. However, developing a ML algorithm that fits a specific problem requires of programmers with expertise in various fields such as statistics, probabilistic modeling, optimization algorithms, etc. This translates, in most of the cases, to the need of highly qualified people who either are not available in the labor market or represent a high cost for the project. In the case of dealing with large volumes of data, these problems are exacerbated since it also requires that the designed ML algorithm to be parallelizable and scalable. All these factors are weighing on the process of ML applications development. So, usually, only large corporations have the technical and financial capacity to carry them out.
 
@@ -26,3 +35,9 @@ Unfortunately, for a company or an institution, the development of ML models spe
 * **Programming a ML model is a complex task where many problems are intermingled**, such as the difficulty of testing the correct functioning of the implementation (a ML model is approximate in nature and the optimal response is unknown in most cases) and the shortage of reusable tools. For this reason, ML applications are often created from scratch.
 
 * **It is difficult to find the ML model most suitable for an application**. The chosen models tend to have limited expressivity (ie, linear or non-linear, probabilistic or non-probabilistic approach, ...). In addition, the code that implements the model usually inherits these limitations, making it difficult to inspect, maintain or improve. This also makes it complex to integrate the expert knowledge about the domain of the application. As a result, applications often use generic modeling hypotheses instead of being specific to the application domain.
+
+
+
+<p align="center">
+<img style="center" src="https://image.slidesharecdn.com/probprogramming-151219161159/95/probabilistic-programming-in-python-5-638.jpg?cb=1450541578" width="200">
+</p>
