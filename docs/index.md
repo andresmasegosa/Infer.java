@@ -1,4 +1,4 @@
-# Scope
+# Prjoect Scope
 
 In this open source software project we aim to develop a probabilistic programming language that supports a distributed computational model like MapReduce. This language will be implemented as a Java API, so that the user can mix probabilistic and non-probabilistic code in the application, and will be integrated into Spark and Flink, two platforms for big data processing. This programming language will be developed as an open software project freely available to the scientific and professional community interested in the use of machine learning techniques (ML) for big data problems.
 
@@ -7,3 +7,22 @@ ML is a field of research that is widely established providing many solutions to
 For these reasons, the prestigious US Defense Advanced Research Projects Agency (DARPA) is currently funding a major programme in the area of probabilistic programming languages (PPLs). According to this agency, the PPLs could offer a solution to all these problems, since they allow to separate the model specification from the learning algorithm. For many experts, the PPLs could revolutionize the field of ML and scientific modeling in the same way that the appearance of the general-purpose programming languages revolutionized the field of software development fifty years ago, by freeing developers from the need to know the details of the hardware on which the program was running.
 
 One of the main problems still unresolved in this field is the definition of PPLs with an inference engine that is scalable and has the capacity to process large volumes of data. In this project we aim to extend and adapt the developments of the European research project AMIDST (FP7-ICT-619 209) to achieve this goal. The AMIDST project, where both the main researcher and the supervisor are involved, is based on the development of scalable inference and learning algorithms for probabilistic graphical models, in the context of massive data streams. The project INFER.java aims to define a PPL whose programs can be compiled to a probabilistic graphical model and to build a scalable inference engine for this PPL on top of the AMIDST's algorithms.
+
+
+#Motivation of PPLs
+
+Machine learning (ML) [1,2] is, at present, a fundamental part of many artificial intelligence techniques [3]. According to this field of research, it is much more effective to develop methods that allow machines to learn to perform tasks on their own, than to program them specifically for each one. This idea has been a real revolution in many other fields of research such as natural language processing [4], predictive analysis [2], cybersecurity [5], bioinformatics [6], and so on. In addition, it has allowed the development of highly innovative applications such as self-employed cars [7], image search [8], junk e-mail filters [9], recommendation systems [10], etc.
+
+One of the main catalysts of this technology has been the current availability by governments, institutions and corporations of large data volumes [11]. This has allowed ML algorithms to have a greater predictive and modeling capacity [10].
+
+Another reason is the availability of open-source platforms that allow a low-cost cluster of computers to be controlled in a transparent and comparatively simple manner using data replication and hardware failure resistance techniques [12]. This has greatly reduced the cost of storing and processing large volumes of data. Most of these platforms have been developed in the last decade and come from the United States. Those based on the MapReduce programming model [12] are those that are currently being used more and have a higher level of development. Notably Hadoop [13], an open source version of the original model submitted by Google in 2004 [12]; Spark [14] (http://spark.apache.org/), a more modern and recent platform with greater processing capacity, which is being widely adopted in the business and scientific world; and Flink [15] (https://flink.apache.org), probably the only relevant initiative in Europe right now, which is receiving a lot of attention from the free software community and which is the result of several research projects, including an FP7 framework project (http://stratosphere.eu). All these technological advances have greatly accelerated the development of ML applications over large volumes of data.
+
+
+Unfortunately, for a company or an institution, the development of ML models specific to their problems requires enormous effort, mainly for the following reasons [16,17]:
+
+
+* **It is necessary to have highly qualified experts**. Develop ML models requires knowledge in various fields such as statistics, probabilistic modeling, optimization algorithms, specialized software, parallel and distributed computing, etc.
+
+* **Programming a ML model is a complex task where many problems are intermingled**, such as the difficulty of testing the correct functioning of the implementation (a ML model is approximate in nature and the optimal response is unknown in most cases) and the shortage of reusable tools. For this reason, ML applications are often created from scratch.
+
+* **It is difficult to find the ML model most suitable for an application**. The chosen models tend to have limited expressivity (ie, linear or non-linear, probabilistic or non-probabilistic approach, ...). In addition, the code that implements the model usually inherits these limitations, making it difficult to inspect, maintain or improve. This also makes it complex to integrate the expert knowledge about the domain of the application. As a result, applications often use generic modeling hypotheses instead of being specific to the application domain.
