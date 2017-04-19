@@ -104,3 +104,82 @@ This approach offers the same advantages to the ML community that high-level pro
 
 
 Probabilistic programming languages could have a similar effect on the development of ML applications. Programmers could specialize in model development while ML experts could focus their efforts on developing reusable inference engines. ML applications developed in this way are likely to suffer some run-time penalties for tailor-made applications, but again this cost will be largely covered by the huge increase in productivity in the development of ML applications. In addition, the number of non-experts who can create applications using a PPL could be vastly greater than now. For these reasons, many experts believe that PPLs could revolutionize the ML field and scientific modeling in general [16,17].
+
+# Bibliography
+
+[1] Bishop, C. M. Pattern Recognition and Machine Learning (Springer, 2006).
+
+[2] Murphy, K. P. Machine Learning: A Probabilistic Perspective (MIT Press, 2012).
+
+[3] Russell, S. and Norvig, P. Artificial Intelligence: a Modern Approach (Prentice–Hall, 1995). 
+
+[4] Sebastiani, Fabrizio. "Machine learning in automated text categorization." ACM computing surveys (CSUR) 34.1 (2002): 1-47.
+
+[5] Dua, Sumeet, and Xian Du. Data mining and machine learning in cybersecurity. CRC press, 2011.
+
+[6] Larrañaga, Pedro, et al. "Machine learning in bioinformatics." Briefings in bioinformatics 7.1 (2006): 86-112.
+
+[7] Markoff, John. "Google Cars Drive Themselves, in Traffic." New York Times 9 (2010).
+
+[8] Hinton, Geoffrey E., Simon Osindero, and Yee-Whye Teh. "A fast learning algorithm for deep belief nets." Neural computation 18.7 (2006): 1527-1554.
+
+[9] Guzella, Thiago S., and Walmir M. Caminhas. "A review of machine learning approaches to spam filtering." Expert Systems with Applications 36.7 (2009): 10206-10222.
+
+[10] Condie, Tyson, et al. "Machine learning for big data." Proceedings of the 2013 ACM SIGMOD International Conference on Management of Data. ACM, 2013.
+
+[11] Zikopoulos, Paul, and Chris Eaton. Understanding big data: Analytics for enterprise class hadoop and streaming data. McGraw-Hill Osborne Media, 2011.
+
+[12] Dean, Jeffrey, and Sanjay Ghemawat. "MapReduce: simplified data processing on large clusters." Communications of the ACM 51.1 (2008): 107-113.
+
+[13] Shvachko, Konstantin, et al. "The hadoop distributed file system." Mass Storage Systems and Technologies (MSST), 2010 IEEE 26th Symposium on. IEEE, 2010.
+
+[14] Zaharia, Matei, et al. "Spark: cluster computing with working sets." Proceedings of the 2nd USENIX conference on Hot topics in cloud computing. Vol. 10. 2010.
+
+[15] Alexandrov, Alexander, et al. "The Stratosphere platform for big data analytics." The VLDB Journal—The International Journal on Very Large Data Bases 23.6 (2014): 939-964. 
+
+[16] Gordon, Andrew D., et al. "Probabilistic programming." Proceedings of the on Future of Software Engineering. ACM, 2014.
+
+[17] Ghahramani, Zoubin. "Probabilistic machine learning and artificial intelligence." Nature 521.7553 (2015): 452-459.
+
+[18] Druzdzel, Marek J., and Linda C. Van Der Gaag. "Elicitation of probabilities for belief networks: combining qualitative and quantitative information." Proceedings of the Eleventh conference on Uncertainty in artificial intelligence. Morgan Kaufmann Publishers Inc., 1995. 
+
+[19] Masegosa Andres R. et al. "Learning from incomplete data in Bayesian networks with qualitative influences". Submitted to International Journal of Approximate Reasoning. 2015. 
+
+[20] Masegosa, Andr s R., and Serafın Moral. "An interactive approach for cleaning noisy observations in Bayesian networks with the help of an expert." 6th European Workshop on Probabilistic Graphical Models (PGM 2012). 2012.
+
+[21] Wexelblat, Richard L., ed. History of programming languages. Academic Press, 2014. 
+
+[22] Goodman, Noah D. "The principles and practice of probabilistic programming." ACM SIGPLAN Notices. Vol. 48. No. 1. ACM, 2013.
+
+[23] Wood, Frank, Jan Willem van de Meent, and Vikash Mansinghka. "A new approach to probabilistic programming inference." Proceedings of the 17th International conference on Artificial Intelligence and Statistics. 2014.
+
+[24] Mansinghka, Vikash, Daniel Selsam, and Yura Perov. "Venture: a higher-order probabilistic programming platform with programmable inference." arXiv preprint arXiv:1404.0099 (2014).
+
+[25] Goodman, Noah, et al. "Church: a language for generative models." arXiv preprint arXiv:1206.3255 (2012).
+
+[26] Lunn, David J., et al. "WinBUGS-a Bayesian modelling framework: concepts, structure, and extensibility." Statistics and computing 10.4 (2000): 325-337.
+
+[27] Fischer, Bernd, and Johann Schumann. "AutoBayes: A system for generating data analysis programs from statistical models." Journal of Functional Programming 13.03 (2003): 483-508.
+
+[28] Cooper, Gregory F. "The computational complexity of probabilistic inference using Bayesian belief networks." Artificial intelligence 42.2 (1990): 393-405.
+
+[29] Hastings, W. Keith. "Monte Carlo sampling methods using Markov chains and their applications." Biometrika 57.1 (1970): 97-109.
+
+[30] Gilks, Walter R., and Pascal Wild. "Adaptive rejection sampling for Gibbs sampling." Applied Statistics (1992): 337-348.
+
+[31] Maclaurin, Dougal, and Ryan P. Adams. "Firefly Monte Carlo: Exact MCMC with subsets of data." arXiv preprint arXiv:1403.5693 (2014).
+
+[32] Paige, Brooks, and Frank Wood. "A compilation target for probabilistic programming languages." arXiv preprint arXiv:1403.0504 (2014).
+
+[33] Minka, Tom, et al. "Infer .NET 2.5." Microsoft Research Cambridge (2012).
+
+[34] Kschischang, Frank R., Brendan J. Frey, and Hans-Andrea Loeliger. "Factor graphs and the sum-product algorithm." Information Theory, IEEE Transactions on 47.2 (2001): 498-519. 
+
+[35] Wainwright, Martin J., and Michael I. Jordan. "Graphical models, exponential families, and variational inference." Foundations and Trends® in Machine Learning 1.1-2 (2008): 1- 305.
+
+[36] Minka, Thomas P. "Expectation propagation for approximate Bayesian inference." Proceedings of the Seventeenth conference on Uncertainty in artificial intelligence. Morgan Kaufmann Publishers Inc., 2001.
+
+[37] Winn, John M., and Christopher M. Bishop. "Variational message passing." Journal of Machine Learning Research. 2005.
+
+[38] Ranganath, Rajesh, Sean Gerrish, and David M. Blei. "Black box variational inference." arXiv preprint arXiv:1401.0118 (2013).
+
