@@ -32,22 +32,23 @@ Another reason is the availability of open-source platforms that allow a low-cos
 
 
 <p align="center">
-<img style="center" src="https://image.slidesharecdn.com/ismdatascientistfinal2-150323081840-conversion-gate01/95/take-aways-from-data-scientist-the-sexiest-job-of-the-21st-century-6-638.jpg?cb=1427098883" width="400">
+<img style="center" src="https://image.slidesharecdn.com/ismdatascientistfinal2-150323081840-conversion-gate01/95/take-aways-from-data-scientist-the-sexiest-job-of-the-21st-century-6-638.jpg?cb=1427098883" width="500">
 </p>
 
 Unfortunately, for a company or an institution, the development of ML models specific to their problems requires enormous effort, mainly for the following reasons [16,17]:
 
 * **It is necessary to have highly qualified experts**. Develop ML models requires knowledge in various fields such as statistics, probabilistic modeling, optimization algorithms, specialized software, parallel and distributed computing, etc.
-* **Programming a ML model is a complex task where many problems are intermingled**, such as the difficulty of testing the correct functioning of the implementation (a ML model is approximate in nature and the optimal response is unknown in most cases) and the shortage of reusable tools. For this reason, ML applications are often created from scratch.
-* **It is difficult to find the ML model most suitable for an application**. The chosen models tend to have limited expressivity (ie, linear or non-linear, probabilistic or non-probabilistic approach, ...). In addition, the code that implements the model usually inherits these limitations, making it difficult to inspect, maintain or improve. This also makes it complex to integrate the expert knowledge about the domain of the application. As a result, applications often use generic modeling hypotheses instead of being specific to the application domain.
 
+* **Programming a ML model is a complex task where many problems are intermingled**, such as the difficulty of testing the correct functioning of the implementation (a ML model is approximate in nature and the optimal response is unknown in most cases) and the shortage of reusable tools. For this reason, ML applications are often created from scratch.
+
+* **It is difficult to find the ML model most suitable for an application**. The chosen models tend to have limited expressivity (ie, linear or non-linear, probabilistic or non-probabilistic approach, ...). In addition, the code that implements the model usually inherits these limitations, making it difficult to inspect, maintain or improve. This also makes it complex to integrate the expert knowledge about the domain of the application. As a result, applications often use generic modeling hypotheses instead of being specific to the application domain.
 
 All these factors are weighing the development of ML applications and making it only available for large corporations that have the technical and financial capacity to carry them out.
 
 For all these reasons, the prestigious American Agency for Advanced Research Projects (DARPA) has today opened a research funding program in the area of **probabilistic programming languages** (PPLs)[16]. According to this agency, PPLs could offer a solution to all these problems.
 
 
-#What's a PPL?
+# What's a PPL?
 
 Broadly speaking, a PPL is like a standard programming language but has two added constructs [16]: (1) the ability to sample random values from a random variable, and (2) the ability to condition the value of a random variable of the program through observations of other random variables. In this way, a program written with a PPL is able to define a probabilistic model [2]. Models in areas as diverse as artificial vision, coding theory, cryptographic protocols and biology can be expressed using PPLs [1,2,17].
 
@@ -61,6 +62,7 @@ The central element of a PPL is its inference engine [16], which allows to expli
 
 In this way, a programmer can directly construct a ML model of the phenomenon of interest using the appropriate PPL commands. When the model depends on an unknown quantity, developers introduce a random variable that can be associated with a wide range of probability distributions [2]. 
 
+## An Example
 Consider the following example. A programmer has access to a flow of measurements of various temperature and smoke sensors in a given area and wants to develop a program that alerts the presence of a fire based on these measurements. The programmer has the following expert knowledge:
 
 * He knows that the presence of a fire is a rare and very unusual event.
@@ -72,10 +74,19 @@ Consider the following example. A programmer has access to a flow of measurement
 
 These four elements of expert knowledge could be modeled, respectively, by a probabilistic model as follows:
 
-* Fire as a rare element: Using a binary variable with a Beta distribution as a priori distribution that expresses that the probability that this binary variable is active is quite low.
+* **Fire as a rare element**: Using a binary variable with a Beta distribution as a priori distribution that expresses that the probability that this binary variable is active is quite low.
 
-* Increased temperature and smoke as signs of fire: These relationships can be defined through the use of graphic models with qualitative links [18,19].
+* **Increased temperature and smoke as signs of fire**: These relationships can be defined through the use of graphic models with qualitative links [18,19].
 
-* Noise in measurements: This is a standard relationship that can be modeled by introducing a standard noise model for Gaussian and binary variables, respectively, where the noise level is modeled with another hidden transparent variable to the programmer [20].
+* **Noise in measurements**: This is a standard relationship that can be modeled by introducing a standard noise model for Gaussian and binary variables, respectively, where the noise level is modeled with another hidden transparent variable to the programmer [20].
 
+* **Uncertainty in the range of temperatures**: This can be solved by having access to a historical data with which to train the model.
+
+
+A fictional example of how a PPL could encode this model in an integrated way with a MapReduce tool is given in Figure 1 (follows a Java 8-based syntax).
+
+
+<p align="center">
+<img style="center" src="https://image.slidesharecdn.com/probprogramming-151219161159/95/probabilistic-programming-in-python-5-638.jpg?cb=1450541578" width="200">
+</p>
 
