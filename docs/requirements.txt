@@ -1,1 +1,1 @@
-sphinx -e git://github.com/ryan-roemer/sphinx-bootstrap-theme.git#egg=sphinx_bootstrap_theme
+pip install sphinx_bootstrap_theme
