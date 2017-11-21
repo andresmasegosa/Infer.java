@@ -1,0 +1,12 @@
+{% extends "!layout.html" %}
+
+{% block header %}
+  {{ super() }}
+  <script>
+    // Adjust banner height.
+    $(function () {
+      var navHeight = $(".navbar .container").css("height");
+      $("#gh-banner").css("top", navHeight);
+    });
+  </script>
+{% endblock %}
