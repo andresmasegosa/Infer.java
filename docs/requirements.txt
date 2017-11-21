@@ -1,1 +1,2 @@
-pip install sphinx_bootstrap_theme
+Fabric>=1.13.2
+Sphinx>=1.6.1
