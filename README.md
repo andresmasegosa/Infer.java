@@ -5,7 +5,7 @@ In this project we aim to develop a probabilistic programming language that supp
 
 
 <p align="center">
-<img style="center" src="https://raw.githubusercontent.com/amidst/Infer.scala/master/docs/figs/ML.jpg" width="500">
+<img style="center" src="https://raw.githubusercontent.com/amidst/Infer.scala/master/docs_old/figs/ML.jpg" width="500">
 </p>
 
 ML is a field of research that is widely established providing many solutions to major problems of society such as web search engines, genetic data analysis, self-driven cars, etc. The current availability by governments, institutions and corporations of large volumes of data is accelerating the development of such applications. However, developing a ML algorithm that fits a specific problem requires of programmers with expertise in various fields such as statistics, probabilistic modeling, optimization algorithms, etc. This translates, in most of the cases, to the need of highly qualified people who either are not available in the labor market or represent a high cost for the project. In the case of dealing with large volumes of data, these problems are exacerbated since it also requires that the designed ML algorithm to be parallelizable and scalable. All these factors are weighing on the process of ML applications development. So, usually, only large corporations have the technical and financial capacity to carry them out.
