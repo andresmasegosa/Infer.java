@@ -18,7 +18,9 @@ in the use of machine learning techniques (ML) for big data problems.
 |
 
 .. toctree::
-   :maxdepth: 2
+   :hidden:
+   :maxdepth: 1
+   :caption: Sections
 
    about
    publications
