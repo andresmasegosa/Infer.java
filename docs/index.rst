@@ -13,7 +13,8 @@
 In this project we aim to develop a probabilistic programming language
 that supports a distributed computational model. This programming language will be developed as an open software project
 freely available to the scientific and professional community interested
-in the use of machine learning techniques (ML) for big data problems. 
+in the use of machine learning techniques (ML) for big data problems. The main result of this project is a **probabilistic programming language** 
+which can be found in this `link <http://inferpy.readthedocs.io/>`_.
 
 |
 
