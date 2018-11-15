@@ -8,3 +8,5 @@ Deliverables
 * **Deliverable E2**: Sintax and Semantic of Inferpy: :download:`[Download] <_static/deliverables/E2.pdf>`.
 
 * **Deliverable E3**: Inferpy's Compiler: :download:`[Download] <_static/deliverables/E3.pdf>`.
+
+* **Deliverable E4.1**: Inferpy's Inference Engine: :download:`[Download] <_static/deliverables/E41.pdf>`.
